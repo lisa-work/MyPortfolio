@@ -38,8 +38,8 @@ export function Experience() {
                           <div className="flex-1">
                             <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-white">{exp.role}</h4>
                             <p className="text-md lg:text-lg text-cyan-400 font-medium">{exp.company}</p>
-                            <p className="text-md lg:text-lg text-slate-400 mb-3">{exp.period}</p>
-                            <p className="text-md md:text-lg lg:text-xl text-slate-300">{exp.description}</p>
+                            <p className="text-md text-slate-400 mb-3">{exp.period}</p>
+                            <p className="text-md md:text-lg text-slate-300">{exp.description}</p>
                           </div>
                         </div>
                       </div>
@@ -73,7 +73,7 @@ export function Experience() {
                           <div className="flex-1">
                             <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-white">{vol.role}</h4>
                             <p className="text-md lg:text-lg text-pink-400 font-medium">{vol.company}</p>
-                            <p className="text-md lg:text-lg text-slate-400 mb-3">{vol.period}</p>
+                            <p className="text-md text-slate-400 mb-3">{vol.period}</p>
                             <p className="text-md md:text-lg text-slate-300">{vol.description}</p>
                           </div>
                         </div>
@@ -103,10 +103,10 @@ export function Experience() {
                   <ScrollReveal key={cert.id} delay={0.7 + index * 0.1}>
                     <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 p-4 hover:border-green-400/50 transition-all duration-300">
                       <h4 className="text-lg md:text-xl lg:text-2xl text-white font-semibold">{cert.title}</h4>
-                      <p className="text-md lg:text-lg text-green-400">{cert.issuer}</p>
-                      <p className="text-md lg:text-lg text-slate-400">{cert.date}</p>
+                      <p className="text-lg text-green-400">{cert.issuer}</p>
+                      <p className="text-md text-slate-400">{cert.date}</p>
                       {cert.link && (
-                        <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-cyan-400 text-md lg:text-lg hover:underline">
+                        <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-cyan-400 text-md hover:underline">
                           View Credential
                         </a>
                       )}
@@ -132,8 +132,8 @@ export function Experience() {
                   <ScrollReveal key={award.id} delay={0.9 + index * 0.1}>
                     <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 p-4 hover:border-yellow-400/50 transition-all duration-300">
                       <h4 className="text-lg md:text-xl lg:text-2xl text-white font-semibold">{award.title}</h4>
-                      <p className="text-lg md:text-xl lg:text-2xl text-yellow-400 text-md lg:text-lg">{award.issuer}</p>
-                      <p className="text-md lg:text-lg text-slate-400 mb-2">{award.date}</p>
+                      <p className="text-lg text-yellow-400 text-md lg:text-lg">{award.issuer}</p>
+                      <p className="text-md text-slate-400 mb-2">{award.date}</p>
                       <p className="text-slate-300 text-md lg:text-lg">{award.description}</p>
                     </div>
                   </ScrollReveal>
