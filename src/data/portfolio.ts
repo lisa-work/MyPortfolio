@@ -1,32 +1,36 @@
 import { Project, Experience, Certification, Award, Language, SocialLink } from '../types';
+import SecondMat from '../assets/SecondMat.jpg';
+import Productivity from '../assets/Productivity.jpg';
+import ArcadeGame from '../assets/ArcadeGame.jpg';
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory management, payment processing, and advanced analytics dashboard.',
-    techStack: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
-    liveDemo: 'https://demo.example.com',
-    github: 'https://github.com/username/ecommerce',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Productivity Manager & Time Tracker Web App',
+    description: 'A full-stack platform for managing tasks, tracking time, and boosting productivity. Users can create and assign tasks, log time with integrated timers, generate interactive reports, and visualize schedules on a calendar. Built with React, Vite, Tailwind CSS, Node.js, and MongoDB, featuring secure JWT authentication and a responsive, user-friendly design.',
+    techStack: ['JavaScript', 'React.js', 'Tailwind CSS', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Axios', 'React Router', 'Recharts', 'react-date-range', 'react-big-calendar', 'JWT Authentication', 'Multer (file uploads)', 'Moment.js', 'Render', 'GitHub'],
+    liveDemo: 'https://productivity-management-frontend.onrender.com/login',
+    github: 'https://github.com/lisa-work/Productivity-Web',
+    image: Productivity,
     featured: true
   },
   {
     id: '2',
-    title: 'AI Task Manager',
-    description: 'An intelligent task management application that uses machine learning to prioritize tasks and predict completion times.',
-    techStack: ['React', 'Python', 'TensorFlow', 'FastAPI', 'MongoDB'],
-    liveDemo: 'https://ai-tasks.example.com',
-    github: 'https://github.com/username/ai-taskmanager',
-    image: 'https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: 'SecondMat – Secondhand Marketplace Web App',
+    description: 'A full-stack web app enabling secure buying and selling of secondhand items within a community. Built with React, Tailwind CSS, Firebase, Drizzle ORM, and Clerk authentication. Features include image uploads, rich item details, soft-delete functionality, dynamic search and filters, and a fully responsive UI for seamless browsing across devices.',
+    techStack: ['JavaScript', 'React.js', 'Tailwind CSS', 'Firebase', 'Drizzle ORM', 'Clerk Authentication', 'Vercel', 'GitHub'],
+    liveDemo: 'https://secondhand-marketplace-web-app-8pnt.vercel.app/home',
+    github: 'https://github.com/lisa-work/Secondhand-Marketplace-Web',
+    image: SecondMat,
   },
   {
     id: '3',
-    title: 'Real-time Chat App',
-    description: 'A modern chat application with end-to-end encryption, file sharing, and real-time collaboration features.',
-    techStack: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'WebRTC'],
-    github: 'https://github.com/username/chat-app',
-    image: 'https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: "2D Arcade Game – Python & Pygame",
+    description: 'A fast-paced 2D arcade game where players dodge enemies and collect points to reach high scores. Built from scratch using Python and Pygame, featuring custom game loops, modular OOP design, smooth animations, and optimized performance.',
+    techStack: ['Python', 'Pygame', 'OOP'],
+    liveDemo: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
+    github: 'https://github.com/lisa-work/PygameFirstProject',
+    image: ArcadeGame,
   }
 ];
 
@@ -122,8 +126,8 @@ export const languages: Language[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { platform: 'GitHub', url: 'https://github.com/username', icon: '🐙' },
-  { platform: 'LinkedIn', url: 'https://linkedin.com/in/username', icon: '💼' },
-  { platform: 'Facebook', url: 'https://facebook.com/username', icon: '📘' },
-  { platform: 'Instagram', url: 'https://instagram.com/username', icon: '📷' }
+  { platform: 'GitHub', url: 'https://github.com/lisa-work', icon: '🐙' },
+  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/ngoc-anh-thu-nguyen-yorku/', icon: '💼' },
+  { platform: 'Facebook', url: 'https://www.facebook.com/ngocanhthu.1175/', icon: '📘' },
+  { platform: 'Instagram', url: 'https://www.instagram.com/mei_nho/', icon: '📷' }
 ];

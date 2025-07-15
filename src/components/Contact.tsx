@@ -32,7 +32,7 @@ export function Contact() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Say <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Hello!</span>
             </h2>
-            <p className="text-xl sm:text-2xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-md md:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
               I'm always interested in new opportunities and exciting projects. Let's start a conversation!
             </p>
           </div>

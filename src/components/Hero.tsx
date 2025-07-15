@@ -39,8 +39,8 @@ export function Hero() {
             </span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-slate-300 mb-8 leading-relaxed">
-            A creative developer & designer crafting digital experiences with passion and precision
+          <p className="text-md md:text-lg lg:text-xl text-slate-300 mb-8 leading-relaxed">
+            A dedicated learner and developer passionate about exploring Web Technologies, AI & Data, and Cybersecurity to create meaningful digital experiences.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -11,7 +11,7 @@ export function Projects() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projects</span>
             </h2>
-            <p className="text-xl sm:text-2xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-md md:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
               A collection of projects that showcase my skills and passion for creating innovative solutions
             </p>
           </div>
