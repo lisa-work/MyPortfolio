@@ -1,7 +1,9 @@
 # 🌟 Lisa Nguyen — Personal Portfolio
 
 Welcome! This is my personal portfolio website where you can learn more about me, explore my featured projects, and discover my journey as a Information Technology learner. 
+
 You definitely can take a look at my projects on Github and get more details from there, but come around my Portfolio to get to know something more about me.
+
 Here's the link: https://my-portfolio-pi-black-64.vercel.app/
 
 ## ✨ A summary of what you'll find
