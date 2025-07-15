@@ -183,7 +183,7 @@ export function Experience() {
                       <h4 className="text-lg md:text-xl lg:text-2xl text-white font-semibold">{aw.title}</h4>
                       <p className="text-lg text-yellow-400">{aw.issuer}</p>
                       <p className="text-md text-slate-400 mb-2">{aw.date}</p>
-                      <p className="text-slate-300">{aw.description}</p>
+                      <p className="text-md md:text-lg text-slate-300">{aw.description}</p>
                       {aw.link && (
                         <a href={aw.link} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">View Certificate</a>
                       )}
