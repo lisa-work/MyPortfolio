@@ -102,15 +102,15 @@ export function Skills() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                {languages.map((lang, index) => {
-                  const Icon = lang.icon;
+                {databases.map((db, index) => {
+                  const Icon = db.icon;
                   return (
-                    <ScrollReveal key={lang.name} delay={0.3 + index * 0.1}>
+                    <ScrollReveal key={db.name} delay={0.3 + index * 0.1}>
                       <div
                         className="flex flex-col items-center justify-center w-24 h-24 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-700 hover:border-cyan-400/50 transition-all duration-300"
                       >
                         {Icon ? <Icon size={20}/> : null}
-                        <span className="text-white text-sm mt-2 font-semibold text-center">{lang.name}</span>
+                        <span className="text-white text-sm mt-2 font-semibold text-center">{db.name}</span>
                       </div>
                     </ScrollReveal>
                   );
