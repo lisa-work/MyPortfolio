@@ -49,7 +49,7 @@ export const projects: Project[] = [
     techStack: ['Python', 'Pygame', 'OOP'],
     liveDemo: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
     github: 'https://github.com/lisa-work/PygameFirstProject',
-    image: '/ArcadeGame.jpg',
+    image: '/Pygame.jpg',
   },
 ];
 
