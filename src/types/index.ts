@@ -16,6 +16,7 @@ export interface Experience {
   period: string;
   description: string;
   logo?: string;
+  link?: string;
 }
 
 export interface Certification {

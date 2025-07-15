@@ -69,7 +69,7 @@ export const projects: Project[] = [
     liveDemo: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
     github: 'https://github.com/lisa-work/PygameFirstProject',
     image: ArcadeGame,
-  }
+  },
 ];
 
 export const workExperience: Experience[] = [
@@ -78,14 +78,14 @@ export const workExperience: Experience[] = [
     company: 'York University',
     role: 'Research and Data Entry Assistant',
     period: '2025 - Present',
-    description: 'Supported research projects by collecting, organizing, and analyzing data to ensure accuracy and reliability. Performed detailed data entry, maintained and updated databases'
+    description: 'Supported research initiatives by accurately collecting, organizing, and analyzing data to maintain high standards of reliability. Performed meticulous data entry and consistently update databases to ensure information remains precise.'
   },
   {
     id: '1',
     company: 'Outlier',
     role: 'AI Trainer',
     period: '2024 - Present',
-    description: 'Contributed to improving AI models by providing high-quality data annotation, evaluating model outputs, and giving detailed feedback to enhance accuracy and performance.'
+    description: 'Contributed to improving AI models by providing high-quality data annotation, evaluating model outputs, and giving detailed feedback to enhance accuracy and performance, ensuring models meet high standards of performance.'
   },
 ];
 
@@ -95,15 +95,46 @@ export const volunteering: Experience[] = [
     company: 'iFixit',
     role: 'Technical Writer',
     period: 'Jan 2025 - May 2025',
-    description: 'Created clear, step-by-step repair guides for common device issues, combining technical expertise with accessible language to support users of all skill levels. Tested and verified repair procedures, integrated visuals to enhance clarity, and ensured consistency and quality across all content.'
+    description: 'Created clear, step-by-step repair guides for common device issues, combining technical expertise with accessible language to support users of all skill levels.',
+    link: 'https://drive.google.com/file/d/1Ih4E3TkVBac2hU6trFzuKVnsxPPfnEMe/view',
   },
   {
     id: '2',
     company: 'York University' ,
     role: 'College Crew Volunteer',
     period: '2024 - 2025',
-    description: 'Created a welcoming and inclusive environment at the Community Hub by helping students navigate resources, collaborate, and connect personally. Supported the execution of events such as orientations, seminar series, and co-curricular activities, engaging with over 70 students per event.'
+    description: 'Created a welcoming and inclusive environment at the Community Hub and supported the execution of events such as orientations and co-curricular activities.',
+    link: 'https://drive.google.com/file/d/1jqSojx9_NwD_1HOydtedkuaZ6tt4u1zI/view'
   },
+  {
+    id: '3',
+    company: 'York University' ,
+    role: 'Tutor Volunteer',
+    period: '2024 - 2025',
+    description: 'Provided personalized academic support to undergraduate students in Natural Science courses, helping them master complex concepts and strengthen their problem-solving skills.'
+  },
+  {
+    id: '4',
+    company: 'Give Love Non-Profit Project',
+    role: 'Fundraiser',
+    period: '2021 - 2022',
+    description: "Developed fundraising initiatives, secured sponsorships, and organized charitable events — raising a total of CAD 4,600 across four events."
+  },
+  {
+    id: '5',
+    company: 'YBOX',
+    role: 'Translator',
+    period: '2021 - 2022',
+    description: "Translated and published 24 high-quality articles on topics including self-improvement, science, and education, ensuring technical accuracy and cultural clarity."
+  },
+  {
+    id: '6',
+    company: 'AIESEC in Vietnam',
+    role: 'Ambassador',
+    period: '2021',
+    description: "Supported event organization and delivered personalized guidance to over 200 participants, helping them engage with the program's leadership activities."
+  },
+
 ];
 
 export const certifications: Certification[] = [
@@ -118,27 +149,49 @@ export const certifications: Certification[] = [
 
 export const awards: Award[] = [
   {
-    id: '3',
+    id: '6',
     title: 'Honours. Sessional Academic Achievement List',
     issuer: 'York University',
     date: 'From 2024 to Present',
-    description: 'Recognized on the Faculty of Arts Sessional Academic Achievement List for outstanding academic excellence.',
+    description: 'Being recognized on the Faculty of Arts Sessional Academic Achievement List for outstanding academic excellence.',
   },
   {
-    id: '2',
+    id: '5',
     title: 'President\'s International Scholarship of Excellence (PISE) Award',
     issuer: 'York University',
     date: '2023',
-    description: 'Awarded a scholarship worth CAD $45,000 annually, renewable for up to three additional years, totaling CAD $180,000 over four years.',
+    description: 'Being awarded a scholarship worth CAD $45,000 annually, renewable for up to three additional years, totaling CAD $180,000 over four years.',
     link: 'https://drive.google.com/file/d/1OfnqmIpHMe2DHRUJ-HGN9_7TTbQkgZzU/view'
   },
   {
-    id: '1',
+    id: '4',
+    title: 'Lester B. Pearson International Scholarship Nomination',
+    issuer: 'Willowdale Secondary School',
+    date: '2022',
+    description: 'Being nominated for the Lester B. Pearson International Scholarship at the University of Toronto, which only accepts 1 student from one high school can be nominated each year.',
+    link: 'https://drive.google.com/file/d/11EgsogDKgYg8gRCG4AcghIIC4RUAykIu/view'
+  },
+  {
+    id: '3',
     title: 'Top 15 Projects in Headway Awards 2021',
     issuer: 'Headway',
     date: '2021',
     description: 'Tech Innovators is an educational initiative that empowers Vietnamese high school students (ages 15–18) to explore careers in IT through a series of four interactive workshops. By partnering with top IT corporations, it bridges the gap between classroom learning and real-world skills, giving nearly 400 students per event hands-on experience in coding, networking, and cybersecurity.',
     link: 'https://drive.google.com/file/d/1godHj1nrcT4MUF4fNH15GP-y8VNKT7Hs/view'
+  },
+  {
+    id: '2',
+    title: 'Highest Merit-based Academic Scholarship',
+    issuer: 'Willowdale Secondary School',
+    date: '2021',
+    description: 'Merit-based aid towards tuition which is determined by academic performance and achievement, awarded to 1 student each year.',
+  },
+  {
+    id: '1',
+    title: 'Full-Ride Academic Scholarship',
+    issuer: 'Northland Scholars Academy',
+    date: '2019',
+    description: 'Merit-based aid towards tuition which is determined by academic performance and achievement, awarded to 1 student each year. Valued at $25,000/year, totaling $100,000 for 4 high-school academic years.',
   },
 ];
 
