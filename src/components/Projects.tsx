@@ -12,7 +12,7 @@ export function Projects() {
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projects</span>
             </h2>
             <p className="text-md md:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
-              A collection of projects that showcase my skills and passion for creating innovative solutions
+              A collection of projects where I explore new technologies and practice my skills.
             </p>
           </div>
         </ScrollReveal>

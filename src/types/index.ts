@@ -32,16 +32,47 @@ export interface Award {
   issuer: string;
   date: string;
   description: string;
+  link?: string;
 }
 
 export interface Language {
   name: string;
-  level: 'learning' | 'intermediate' | 'advanced' | 'expert';
-  icon: string;
+  icon?: React.ElementType;
+}
+
+export interface FrontendFramework {
+  name: string;
+  icon?: React.ElementType;
+}
+
+export interface BackendFramework {
+  name: string;
+  icon?: React.ElementType;
+}
+
+export interface Database {
+  name: string;
+  icon?: React.ElementType;
+}
+
+export interface DevOps {
+  name: string;
+  icon?: React.ElementType;
+}
+
+export interface AuthSecurity {
+  name: string;
+  icon?: React.ElementType;
 }
 
 export interface SocialLink {
   platform: string;
   url: string;
   icon: string;
+}
+
+export interface About {
+  name: string;
+  description: string;
+  icon?: React.ElementType;
 }

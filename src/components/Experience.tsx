@@ -8,6 +8,7 @@ export function Experience() {
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4 ">Featured</h2>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Experience & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Achievements</span>
             </h2>
@@ -135,6 +136,11 @@ export function Experience() {
                       <p className="text-lg text-yellow-400 text-md lg:text-lg">{award.issuer}</p>
                       <p className="text-md text-slate-400 mb-2">{award.date}</p>
                       <p className="text-slate-300 text-md lg:text-lg">{award.description}</p>
+                      {award.link && (
+                        <a href={award.link} target="_blank" rel="noopener noreferrer" className="text-cyan-400 text-md hover:underline">
+                          View Certificate
+                        </a>
+                      )}
                     </div>
                   </ScrollReveal>
                 ))}

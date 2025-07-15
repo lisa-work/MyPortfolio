@@ -1,7 +1,45 @@
-import { Project, Experience, Certification, Award, Language, SocialLink } from '../types';
+import { Project, Experience, Certification, Award, Language, SocialLink, FrontendFramework, BackendFramework, Database, DevOps, AuthSecurity, About } from '../types';
 import SecondMat from '../assets/SecondMat.jpg';
 import Productivity from '../assets/Productivity.jpg';
 import ArcadeGame from '../assets/ArcadeGame.jpg';
+
+import { TbBrandTypescript } from "react-icons/tb";
+import { SiJavascript, SiPython, SiMysql } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import { FaRegLightbulb, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
+
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiTailwindcss, 
+  SiHtml5, 
+  SiCss3, 
+  SiVite 
+} from "react-icons/si";
+
+import { 
+  SiNodedotjs, 
+  SiExpress 
+} from "react-icons/si";
+import { TbServer } from "react-icons/tb";
+
+import { 
+  SiMongodb, 
+  SiPostgresql, 
+  SiFirebase 
+} from "react-icons/si";
+
+import { 
+  SiGithub, 
+  SiVercel, 
+  SiRender
+} from "react-icons/si";
+
+import { 
+  SiJsonwebtokens, 
+  SiAuth0 
+} from "react-icons/si";
+import { TbLock } from "react-icons/tb";
 
 export const projects: Project[] = [
   {
@@ -36,93 +74,114 @@ export const projects: Project[] = [
 
 export const workExperience: Experience[] = [
   {
-    id: '1',
-    company: 'TechCorp Solutions',
-    role: 'Senior Full Stack Developer',
-    period: '2023 - Present',
-    description: 'Lead development of scalable web applications, mentor junior developers, and architect cloud-native solutions serving 100k+ users.'
-  },
-  {
     id: '2',
-    company: 'Digital Innovations Inc',
-    role: 'Frontend Developer',
-    period: '2021 - 2023',
-    description: 'Developed responsive web applications using React and TypeScript, improved performance by 40%, and collaborated with UX teams.'
+    company: 'York University',
+    role: 'Research and Data Entry Assistant',
+    period: '2025 - Present',
+    description: 'Supported research projects by collecting, organizing, and analyzing data to ensure accuracy and reliability. Performed detailed data entry, maintained and updated databases'
   },
   {
-    id: '3',
-    company: 'StartupLab',
-    role: 'Junior Developer',
-    period: '2020 - 2021',
-    description: 'Built MVPs for startup clients, worked with modern JavaScript frameworks, and gained experience in agile development practices.'
-  }
+    id: '1',
+    company: 'Outlier',
+    role: 'AI Trainer',
+    period: '2024 - Present',
+    description: 'Contributed to improving AI models by providing high-quality data annotation, evaluating model outputs, and giving detailed feedback to enhance accuracy and performance.'
+  },
 ];
 
 export const volunteering: Experience[] = [
   {
     id: '1',
-    company: 'Code for Good',
-    role: 'Technical Mentor',
-    period: '2022 - Present',
-    description: 'Mentor underrepresented students in programming, conduct workshops on web development, and contribute to open-source projects.'
+    company: 'iFixit',
+    role: 'Technical Writer',
+    period: 'Jan 2025 - May 2025',
+    description: 'Created clear, step-by-step repair guides for common device issues, combining technical expertise with accessible language to support users of all skill levels. Tested and verified repair procedures, integrated visuals to enhance clarity, and ensured consistency and quality across all content.'
   },
   {
     id: '2',
-    company: 'Local Community Center',
-    role: 'Web Developer',
-    period: '2021 - 2022',
-    description: 'Redesigned and maintained the community center website, improved accessibility, and trained staff on content management.'
-  }
+    company: 'York University' ,
+    role: 'College Crew Volunteer',
+    period: '2024 - 2025',
+    description: 'Created a welcoming and inclusive environment at the Community Hub by helping students navigate resources, collaborate, and connect personally. Supported the execution of events such as orientations, seminar series, and co-curricular activities, engaging with over 70 students per event.'
+  },
 ];
 
 export const certifications: Certification[] = [
   {
     id: '1',
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: '2023',
-    link: 'https://aws.amazon.com/certification/'
+    title: 'CompTIA Security+ ce Certification',
+    issuer: 'CompTIA',
+    date: '2024',
+    link: 'https://www.credly.com/badges/bfdde584-b998-4f5d-b7f9-9ddedbcb0fa5/linked_in_profile'
   },
-  {
-    id: '2',
-    title: 'React Professional Developer',
-    issuer: 'Meta',
-    date: '2022',
-    link: 'https://developers.facebook.com/developercircles/'
-  },
-  {
-    id: '3',
-    title: 'Google Cloud Professional',
-    issuer: 'Google Cloud',
-    date: '2022'
-  }
 ];
 
 export const awards: Award[] = [
   {
-    id: '1',
-    title: 'Best Innovation Award',
-    issuer: 'TechCorp Solutions',
-    date: '2023',
-    description: 'Recognized for developing an innovative solution that improved customer satisfaction by 35%.'
+    id: '3',
+    title: 'Honours. Sessional Academic Achievement List',
+    issuer: 'York University',
+    date: 'From 2024 to Present',
+    description: 'Recognized on the Faculty of Arts Sessional Academic Achievement List for outstanding academic excellence.',
   },
   {
     id: '2',
-    title: 'Hackathon Winner',
-    issuer: 'City Tech Challenge',
-    date: '2022',
-    description: 'First place in 48-hour hackathon for creating a sustainable transportation app.'
-  }
+    title: 'President\'s International Scholarship of Excellence (PISE) Award',
+    issuer: 'York University',
+    date: '2023',
+    description: 'Awarded a scholarship worth CAD $45,000 annually, renewable for up to three additional years, totaling CAD $180,000 over four years.',
+    link: 'https://drive.google.com/file/d/1OfnqmIpHMe2DHRUJ-HGN9_7TTbQkgZzU/view'
+  },
+  {
+    id: '1',
+    title: 'Top 15 Projects in Headway Awards 2021',
+    issuer: 'Headway',
+    date: '2021',
+    description: 'Tech Innovators is an educational initiative that empowers Vietnamese high school students (ages 15–18) to explore careers in IT through a series of four interactive workshops. By partnering with top IT corporations, it bridges the gap between classroom learning and real-world skills, giving nearly 400 students per event hands-on experience in coding, networking, and cybersecurity.',
+    link: 'https://drive.google.com/file/d/1godHj1nrcT4MUF4fNH15GP-y8VNKT7Hs/view'
+  },
 ];
 
 export const languages: Language[] = [
-  { name: 'JavaScript', level: 'expert', icon: '🟨' },
-  { name: 'TypeScript', level: 'advanced', icon: '🔷' },
-  { name: 'Python', level: 'advanced', icon: '🐍' },
-  { name: 'React', level: 'expert', icon: '⚛️' },
-  { name: 'Node.js', level: 'advanced', icon: '🟢' },
-  { name: 'Go', level: 'learning', icon: '🔵' },
-  { name: 'Rust', level: 'learning', icon: '🦀' }
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: TbBrandTypescript },
+  { name: "Python", icon: SiPython },
+  { name: "Java", icon: FaJava },
+  { name: "SQL", icon: SiMysql },
+];
+
+export const frontendFrameworks: FrontendFramework[] = [
+  { name: "React.js", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "HTML", icon: SiHtml5 },
+  { name: "CSS", icon: SiCss3 },
+  { name: "Vite", icon: SiVite },
+];
+
+export const backendFrameworks: BackendFramework[] = [
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Express.js", icon: SiExpress },
+  { name: "Drizzle", icon: TbServer }, // Placeholder server icon
+];
+
+export const databases: Database[] = [
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "MySQL", icon: SiMysql },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Firebase", icon: SiFirebase },
+];
+
+export const devOpsTools: DevOps[] = [
+  { name: "GitHub", icon: SiGithub },
+  { name: "Vercel", icon: SiVercel },
+  { name: "Render", icon: SiRender },
+];
+
+export const AuthAndSecurity: AuthSecurity[] = [
+  { name: "JWT", icon: SiJsonwebtokens },
+  { name: "bcrypt.js", icon: TbLock }, // Generic lock icon
+  { name: "OAuth2", icon: SiAuth0 },   // Auth0 as representative icon
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -130,4 +189,22 @@ export const socialLinks: SocialLink[] = [
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/ngoc-anh-thu-nguyen-yorku/', icon: '💼' },
   { platform: 'Facebook', url: 'https://www.facebook.com/ngocanhthu.1175/', icon: '📘' },
   { platform: 'Instagram', url: 'https://www.instagram.com/mei_nho/', icon: '📷' }
+];
+
+export const aboutme: About[] = [ 
+  {
+    name: 'Dreamer',
+    description: "I believe in transforming bold, unconventional ideas into meaningful digital experiences. Rather than waiting for opportunities, I proactively turn my visions into reality. My curiosity and passion for innovation drive me to explore how technology can positively impact lives and foster authentic connections.",
+    icon: FaRegLightbulb,
+  },
+  {
+    name: 'Learner',
+    description: "To bring these dreams to life, I focus on building strong foundations in knowledge and skills. After transitioning from Business to Information Technology at York University in September 2024 and diving into web technologies in May 2025, I’ve dedicated myself to continuous learning. Despite the challenges, I stay driven by my passion for Web Development, Cybersecurity, and AI.",
+    icon: FaGraduationCap,
+  },
+  {
+    name: 'Do-er',
+    description: "From hackathons to independent projects, I thrive on bringing ideas to life through hands-on creation. I love crafting solutions that blend functionality with thoughtful design and strong security, always aiming to deliver impactful, user-centered experiences that make a difference.",
+    icon: FaLaptopCode,
+  },
 ];

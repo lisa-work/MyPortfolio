@@ -1,20 +1,47 @@
 import { useState } from 'react';
 import { Send, Mail, MessageCircle, User } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
+import toast from 'react-hot-toast';
 
 export function Contact() {
+
+  const [result, setResult] = useState("");
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+  interface Web3FormsResponse {
+    success: boolean;
+    message: string;
+    [key: string]: any;
+  }
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    formData.append("access_key", "4bdf9e92-025e-4452-ad19-2347f493e422");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data: Web3FormsResponse = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      (event.target as HTMLFormElement).reset();
+      toast.success("Form submitted successfully!");
+      window.location.reload();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -33,7 +60,7 @@ export function Contact() {
               Say <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Hello!</span>
             </h2>
             <p className="text-md md:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. Let's start a conversation!
+              I'm always interested in new opportunities and exciting projects, or simply a new friend. Let's start a conversation!
             </p>
           </div>
         </ScrollReveal>
