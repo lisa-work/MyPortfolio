@@ -40,7 +40,7 @@ export function Hero() {
           </h1>
           
           <p className="text-md md:text-lg lg:text-xl text-slate-300 mb-8 leading-relaxed">
-            A dedicated learner and developer passionate about exploring Web Technologies, AI & Data, and Cybersecurity to create meaningful digital experiences.
+            A dedicated learner and developer passionate about exploring <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Web Technologies</span>, <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">AI & Data</span>, and <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Cybersecurity</span> to create meaningful digital experiences.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">

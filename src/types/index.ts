@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 export interface Project {
   id: string;
   title: string;
-  description: string;
+  description: string | ReactNode;
   techStack: string[];
   liveDemo?: string;
   github: string;
@@ -14,7 +16,7 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
-  description: string;
+  description: string | ReactNode;
   logo?: string;
   link?: string;
 }
@@ -32,7 +34,7 @@ export interface Award {
   title: string;
   issuer: string;
   date: string;
-  description: string;
+  description: string | ReactNode;
   link?: string;
 }
 
@@ -74,6 +76,6 @@ export interface SocialLink {
 
 export interface About {
   name: string;
-  description: string;
+  description: string | ReactNode;
   icon?: React.ElementType;
 }
