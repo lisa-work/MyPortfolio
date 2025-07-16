@@ -13,6 +13,7 @@ import {
   About
 } from '../types';
 
+import { RiSupabaseLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
 import { SiJavascript, SiPython, SiMysql, SiReact, SiNextdotjs, SiTailwindcss, SiHtml5, SiCss3, SiVite, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql, SiFirebase, SiGithub, SiVercel, SiRender, SiJsonwebtokens, SiAuth0 } from "react-icons/si";
 import { FaJava, FaRegLightbulb, FaGraduationCap, FaLaptopCode } from "react-icons/fa6";
@@ -21,11 +22,22 @@ import { TbServer, TbLock } from "react-icons/tb";
 // ✅ Projects
 export const projects: Project[] = [
   {
-    id: '1',
+    id: '4',
+    title: 'ChatAI - AI-Based Chat Companion',
+    description: 
+    <>ChatAI — A modern, <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">AI-powered chat platform with user authentication, theme customization, and chat management</span>, built using Next.js, Supabase, and Tailwind CSS.</>,
+    techStack: ['TypeScript', 'React.js', 'Tailwind CSS', 'Next.js', 'Supabase', 'PostgreSQL', 'bcrypt.js', 'JWT Authentication', 'Vercel', 'GitHub', 'Google Gemini'],
+    liveDemo: 'https://my-chat-ai-canada.vercel.app/',
+    github: 'https://github.com/lisa-work/MyChatAI',
+    image: '/ChatAI.png',
+    featured: true
+  },
+  {
+    id: '3',
     title: 'Productivity Manager & Time Tracker Web App',
     description: 
     <>A full-stack platform for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">managing tasks, tracking time, and boosting productivity.</span> Users can create and assign tasks, log time with integrated timers, generate interactive reports, and visualize schedules on a calendar. Built with React, Vite, Tailwind CSS, Node.js, and MongoDB, featuring secure JWT authentication and a responsive, user-friendly design.</>,
-    techStack: ['JavaScript', 'React.js', 'Tailwind CSS', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Axios', 'React Router', 'Recharts', 'react-date-range', 'react-big-calendar', 'JWT Authentication', 'Multer (file uploads)', 'Moment.js', 'Render', 'GitHub'],
+    techStack: ['JavaScript', 'React.js', 'Tailwind CSS', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Axios', 'React Router', 'Recharts', 'react-date-range', 'react-big-calendar', 'JWT Authentication', 'bcrypt.js', 'Multer (file uploads)', 'Moment.js', 'Render', 'GitHub'],
     liveDemo: 'https://productivity-management-frontend.onrender.com/login',
     github: 'https://github.com/lisa-work/Productivity-Web',
     image: '/Productivity.jpg',
@@ -42,7 +54,7 @@ export const projects: Project[] = [
     image: '/SecondMat.jpg',
   },
   {
-    id: '3',
+    id: '1',
     title: "2D Arcade Game – Python & Pygame",
     description: 
     <>A fast-paced 2D arcade game where players <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">dodge enemies and collect points</span> to reach high scores. Built from scratch using Python and Pygame, featuring custom game loops, modular OOP design, smooth animations, and optimized performance.</>,
@@ -233,6 +245,7 @@ export const databases: Database[] = [
   { name: "MongoDB", icon: SiMongodb },
   { name: "MySQL", icon: SiMysql },
   { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Supabase", icon: RiSupabaseLine },
   { name: "Firebase", icon: SiFirebase },
 ];
 
