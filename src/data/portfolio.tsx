@@ -30,6 +30,7 @@ export const projects: Project[] = [
     liveDemo: 'https://hand-gesture-dodge-survive-game.vercel.app/',
     github: 'https://github.com/lisa-work/Hand-Gesture-Dodge-Survive-Game',
     image: '/handDodgeGame.png',
+    video: 'https://youtu.be/gk-fh4xINUU',
     featured: true
   },
   {
