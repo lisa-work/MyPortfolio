@@ -22,6 +22,17 @@ import { TbServer, TbLock } from "react-icons/tb";
 // ✅ Projects
 export const projects: Project[] = [
   {
+    id: '5',
+    title: 'Hand Gesture Dodge & Survive Game',
+    description: 
+    <>A real-time, gesture-controlled browser game where players <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">use their hand movements via webcam to dodge falling obstacles.</span> AI-based hand tracking with game logic for an interactive experience — no keyboard required!</>,
+    techStack: ['TypeScript', 'React.js', 'Tailwind CSS', 'MediaPipe', 'Vercel', 'GitHub'],
+    liveDemo: 'https://hand-gesture-dodge-survive-game.vercel.app/',
+    github: 'https://github.com/lisa-work/Hand-Gesture-Dodge-Survive-Game',
+    image: '/handDodgeGame.png',
+    featured: true
+  },
+  {
     id: '4',
     title: 'ChatAI - AI-Based Chat Companion',
     description: 
@@ -52,6 +63,7 @@ export const projects: Project[] = [
     liveDemo: 'https://secondhand-marketplace-web-app-8pnt.vercel.app/home',
     github: 'https://github.com/lisa-work/Secondhand-Marketplace-Web',
     image: '/SecondMat.jpg',
+    featured: true
   },
   {
     id: '1',
@@ -62,6 +74,7 @@ export const projects: Project[] = [
     liveDemo: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
     github: 'https://github.com/lisa-work/PygameFirstProject',
     image: '/Pygame.jpg',
+    featured: true
   },
 ];
 
