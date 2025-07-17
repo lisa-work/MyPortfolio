@@ -41,6 +41,7 @@ export const projects: Project[] = [
     liveDemo: 'https://my-chat-ai-canada.vercel.app/',
     github: 'https://github.com/lisa-work/MyChatAI',
     image: '/ChatAI.png',
+    video: 'https://www.youtube.com/watch?v=gIi6DIU12-Q',
     featured: true
   },
   {
@@ -52,6 +53,7 @@ export const projects: Project[] = [
     liveDemo: 'https://productivity-management-frontend.onrender.com/login',
     github: 'https://github.com/lisa-work/Productivity-Web',
     image: '/Productivity.jpg',
+    video: 'https://www.youtube.com/watch?v=mqxu3PjZ91g',
     featured: true
   },
   {
@@ -63,6 +65,7 @@ export const projects: Project[] = [
     liveDemo: 'https://secondhand-marketplace-web-app-8pnt.vercel.app/home',
     github: 'https://github.com/lisa-work/Secondhand-Marketplace-Web',
     image: '/SecondMat.jpg',
+    video: 'https://www.youtube.com/watch?v=-bGbzFYYRbs',
     featured: true
   },
   {
@@ -71,9 +74,9 @@ export const projects: Project[] = [
     description: 
     <>A fast-paced 2D arcade game where players <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">dodge enemies and collect points</span> to reach high scores. Built from scratch using Python and Pygame, featuring custom game loops, modular OOP design, smooth animations, and optimized performance.</>,
     techStack: ['Python', 'Pygame', 'OOP'],
-    liveDemo: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
     github: 'https://github.com/lisa-work/PygameFirstProject',
     image: '/Pygame.jpg',
+    video: 'https://www.youtube.com/watch?v=ubD66YDgBOI',
     featured: true
   },
 ];

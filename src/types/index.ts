@@ -8,6 +8,7 @@ export interface Project {
   liveDemo?: string;
   github: string;
   image: string;
+  video?: string;
   featured?: boolean;
 }
 

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
+import { AiOutlineYoutube } from "react-icons/ai";
 import { Project } from '../types';
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   project: Project;
@@ -56,7 +58,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               onClick={(e) => e.stopPropagation()}
               className="flex items-center gap-1 text-md text-slate-300 hover:text-cyan-400 transition-colors"
             >
-              <Github size={25} />
+              <FaGithub size={25} />
               Code
             </a>
             {project.liveDemo && (
@@ -70,6 +72,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 <ExternalLink size={25} />
                 Demo
               </a>
+              
+            )}
+            {project.video && (
+              <a
+                href={project.video}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="flex items-center gap-1 text-md text-slate-300 hover:text-cyan-400 transition-colors"
+              >
+                <AiOutlineYoutube size={25} />
+                Video
+              </a>
+              
             )}
           </div>
         </div>
