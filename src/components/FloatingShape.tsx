@@ -20,7 +20,7 @@ export function FloatingShape() {
         color="#64ffda"
         wireframe
         transparent
-        opacity={0.6}
+        opacity={0.7}
       />
     </mesh>
   );

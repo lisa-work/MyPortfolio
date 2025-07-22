@@ -30,7 +30,7 @@ export function ParticleBackground() {
       <PointMaterial
         transparent
         color="#64ffda"
-        size={0.005}
+        size={0.05}
         sizeAttenuation={true}
         depthWrite={false}
         opacity={0.8}
