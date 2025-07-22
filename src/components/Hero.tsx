@@ -26,7 +26,7 @@ export function Hero() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 300); // fade out after slight scroll
+      setScrolled(window.scrollY > 50); // fade out after slight scroll
     };
 
     window.addEventListener('scroll', handleScroll);
