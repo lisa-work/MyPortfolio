@@ -167,7 +167,7 @@ export function Experience() {
             </div>
           </ScrollReveal>
 
-          {/* Awards */}
+          {/* Honors & Awards */}
           <ScrollReveal delay={0.8}>
             <div>
               <div className="flex items-center gap-3 mb-6">

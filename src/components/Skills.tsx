@@ -18,6 +18,7 @@ export function Skills() {
           </div>
         </ScrollReveal>
 
+        {/* Programming Languages */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <ScrollReveal delay={0.2}>
             <div>
@@ -44,6 +45,7 @@ export function Skills() {
                 })}
               </div>
 
+              {/* Frontend Frameworks */}
               <div className="flex items-center gap-3 my-8">
                 <div className="p-2 bg-cyan-500/20 rounded-lg">
                   <Code className="text-cyan-400" size={24} />
@@ -67,6 +69,7 @@ export function Skills() {
                 })}
               </div>
 
+              {/* DevOps */}
               <div className="flex items-center gap-3 my-8">
                 <div className="p-2 bg-cyan-500/20 rounded-lg">
                   <Code className="text-cyan-400" size={24} />
@@ -92,6 +95,7 @@ export function Skills() {
             </div>
           </ScrollReveal>
 
+          {/* Databases */}
           <ScrollReveal delay={0.2}>
             <div>
               <div className="flex items-center gap-3 mb-8">
@@ -117,6 +121,7 @@ export function Skills() {
                 })}
               </div>
 
+              
               <div className="flex items-center gap-3 my-8">
                 <div className="p-2 bg-cyan-500/20 rounded-lg">
                   <Code className="text-cyan-400" size={24} />
@@ -124,6 +129,7 @@ export function Skills() {
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">Backend Frameworks</h3>
               </div>
 
+              {/* Backend Frameworks */}
               <div className="flex flex-wrap gap-4">
                 {backendFrameworks.map((backend, index) => {
                   const Icon = backend.icon;
@@ -140,6 +146,7 @@ export function Skills() {
                 })}
               </div>
 
+              {/* Auth & Security */}
               <div className="flex items-center gap-3 my-8">
                 <div className="p-2 bg-cyan-500/20 rounded-lg">
                   <Code className="text-cyan-400" size={24} />

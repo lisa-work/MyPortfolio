@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { FloatingShape } from './FloatingShape';
 import { ParticleBackground } from './ParticleBackground';
-import { ReactNode } from 'react';
 
 import { ChevronDown, Linkedin} from 'lucide-react';
 import { FiFacebook } from "react-icons/fi";
@@ -22,6 +22,17 @@ export function Hero() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 300); // fade out after slight scroll
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -29,7 +40,7 @@ export function Hero() {
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-          <ParticleBackground />
+          <ParticleBackground visible={!scrolled}/>
           <FloatingShape />
           <OrbitControls enableZoom={false} enablePan={false} />
         </Canvas>
