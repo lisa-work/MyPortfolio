@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Github, X } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 import { AiOutlineYoutube } from "react-icons/ai";
 import { Project } from '../types';
 import { FaGithub } from "react-icons/fa";
@@ -92,7 +92,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm rounded-lg">
           <div className="bg-slate-800 rounded-xl border border-slate-700 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="relative">
               <img 
@@ -133,7 +133,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-slate-700 text-white rounded-lg hover:bg-slate-600 transition-colors"
                 >
-                  <Github size={20} />
+                  <FaGithub size={20} />
                   View Code
                 </a>
                 {project.liveDemo && (
