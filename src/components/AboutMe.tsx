@@ -1,3 +1,4 @@
+import React from 'react';
 import { ScrollReveal } from './ScrollReveal';
 import { AboutMeCard } from './AboutMeCard';
 import { aboutme } from '../data/portfolio';
@@ -24,7 +25,7 @@ export function AboutMe() {
             {aboutme.map((item, index) => (
               <ScrollReveal key={index} delay={0.2 + index * 0.1}>
                 <AboutMeCard 
-                  icon={<item.icon />} 
+                  icon={item.icon ? React.createElement(item.icon) : null} 
                   name={item.name} 
                   description={item.description} 
                 />

@@ -19,7 +19,7 @@ import { SiJavascript, SiPython, SiMysql, SiReact, SiNextdotjs, SiTailwindcss, S
 import { FaJava, FaRegLightbulb, FaGraduationCap, FaLaptopCode } from "react-icons/fa6";
 import { TbServer, TbLock } from "react-icons/tb";
 
-// ✅ Projects
+// Projects
 export const projects: Project[] = [
   {
     id: '5',
@@ -82,7 +82,7 @@ export const projects: Project[] = [
   },
 ];
 
-// ✅ Work Experience
+// Work Experience
 export const workExperience: Experience[] = [
   {
     id: '2',
@@ -102,7 +102,7 @@ export const workExperience: Experience[] = [
   },
 ];
 
-// ✅ Volunteering
+// Volunteering
 export const volunteering: Experience[] = [
   {
     id: '1',
@@ -165,7 +165,7 @@ export const volunteering: Experience[] = [
 
 ];
 
-// ✅ Certifications
+// Certifications
 export const certifications: Certification[] = [
   {
     id: '1',
@@ -176,7 +176,7 @@ export const certifications: Certification[] = [
   },
 ];
 
-// ✅ Awards
+// Awards
 export const awards: Award[] = [
   {
     id: '6',
@@ -231,7 +231,7 @@ export const awards: Award[] = [
   },
 ];
 
-// ✅ Languages
+// Languages
 export const languages: Language[] = [
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: TbBrandTypescript },
@@ -240,7 +240,7 @@ export const languages: Language[] = [
   { name: "SQL", icon: SiMysql },
 ];
 
-// ✅ Frontend Frameworks
+// Frontend Frameworks
 export const frontendFrameworks: FrontendFramework[] = [
   { name: "React.js", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
@@ -250,14 +250,14 @@ export const frontendFrameworks: FrontendFramework[] = [
   { name: "Vite", icon: SiVite },
 ];
 
-// ✅ Backend Frameworks
+// Backend Frameworks
 export const backendFrameworks: BackendFramework[] = [
   { name: "Node.js", icon: SiNodedotjs },
   { name: "Express.js", icon: SiExpress },
   { name: "Drizzle", icon: TbServer },
 ];
 
-// ✅ Databases
+// Databases
 export const databases: Database[] = [
   { name: "MongoDB", icon: SiMongodb },
   { name: "MySQL", icon: SiMysql },
@@ -266,21 +266,21 @@ export const databases: Database[] = [
   { name: "Firebase", icon: SiFirebase },
 ];
 
-// ✅ DevOps Tools
+// DevOps Tools
 export const devOpsTools: DevOps[] = [
   { name: "GitHub", icon: SiGithub },
   { name: "Vercel", icon: SiVercel },
   { name: "Render", icon: SiRender },
 ];
 
-// ✅ Auth & Security
+// Auth & Security
 export const AuthAndSecurity: AuthSecurity[] = [
   { name: "JWT", icon: SiJsonwebtokens },
   { name: "bcrypt.js", icon: TbLock },
   { name: "OAuth2", icon: SiAuth0 },
 ];
 
-// ✅ Social Links
+// Social Links
 export const socialLinks: SocialLink[] = [
   { platform: 'GitHub', url: 'https://github.com/lisa-work', icon: '🐙' },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/ngoc-anh-thu-nguyen-yorku/', icon: '💼' },
@@ -288,7 +288,7 @@ export const socialLinks: SocialLink[] = [
   { platform: 'Instagram', url: 'https://www.instagram.com/mei_nho/', icon: '📷' }
 ];
 
-// ✅ About Me (with TSX support)
+// About Me
 export const aboutme: About[] = [
   {
     name: 'Dreamer',

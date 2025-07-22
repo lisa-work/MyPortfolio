@@ -1,9 +1,9 @@
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 
 interface AboutMeCardProps {
-  icon: ReactElement;
+  icon: ReactElement | null;
   name: string;
-  description: string;
+  description: ReactNode | string;
 }
 
 export function AboutMeCard({ icon, name, description }: AboutMeCardProps) {
