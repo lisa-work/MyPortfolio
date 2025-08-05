@@ -28,7 +28,7 @@ export const projects: Project[] = [
     <>An AI-powered web platform that helps users — especially international students — <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">quickly find and book nearby clinics or hospitals that match their insurance, urgency level, and location.</span> It streamlines triage, cost estimation, and appointment booking into a single, user-friendly experience.</>
     techStack: ['TypeScript', 'React.js', 'Express.js', 'Redis', 'Tailwind CSS', 'MongoDB', 'Google Maps API', 'Gemini AI API', 'JWT', 'GitHub'],
     github: 'https://github.com/lisa-work/WaitlessOS',
-    image: '/handDodgeGame.png',
+    image: '/waitlessOS.jpg',
     video: 'https://www.youtube.com/watch?v=U9aM4ys9-Go',
     featured: true
   },
