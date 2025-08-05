@@ -22,6 +22,17 @@ import { TbServer, TbLock } from "react-icons/tb";
 // Projects
 export const projects: Project[] = [
   {
+    id: '6',
+    title: 'WaitlessOS -  Healthcare Booking Platform ',
+    description: 
+    <>An AI-powered web platform that helps users — especially international students — <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">quickly find and book nearby clinics or hospitals that match their insurance, urgency level, and location.</span> It streamlines triage, cost estimation, and appointment booking into a single, user-friendly experience.</>
+    techStack: ['TypeScript', 'React.js', 'Express.js', 'Redis', 'Tailwind CSS', 'MongoDB', 'Google Maps API', 'Gemini AI API', 'JWT', 'GitHub'],
+    github: 'https://github.com/lisa-work/WaitlessOS',
+    image: '/handDodgeGame.png',
+    video: 'https://www.youtube.com/watch?v=U9aM4ys9-Go',
+    featured: true
+  },
+  {
     id: '5',
     title: 'Hand Gesture Dodge & Survive Game',
     description: 
