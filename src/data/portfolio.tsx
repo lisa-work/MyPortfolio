@@ -18,6 +18,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { SiJavascript, SiPython, SiMysql, SiReact, SiNextdotjs, SiTailwindcss, SiHtml5, SiCss3, SiVite, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql, SiFirebase, SiGithub, SiVercel, SiRender, SiJsonwebtokens, SiAuth0 } from "react-icons/si";
 import { FaJava, FaRegLightbulb, FaGraduationCap, FaLaptopCode } from "react-icons/fa6";
 import { TbServer, TbLock } from "react-icons/tb";
+import { SiRedis } from "react-icons/si";
 
 // Projects
 export const projects: Project[] = [
@@ -275,6 +276,7 @@ export const databases: Database[] = [
   { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Supabase", icon: RiSupabaseLine },
   { name: "Firebase", icon: SiFirebase },
+  { name: "Redis", icon: SiRedis },
 ];
 
 // DevOps Tools
